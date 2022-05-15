@@ -42,3 +42,21 @@ python example_files/predict.py models/linear_regression_model.sav data/X_test.c
 ## Limitations
 
 Development libraries are part of the production environment, normally these would be separate as the production code should be as slim as possible.
+
+
+### Milestone 1: Sabeeh, Stephan, Robert
+- What is the value of the product? Stakeholder:
+Tui Travel Agency / Predict flight delays to improve recommendation for customers and therefore generate more revenue
+- What are you predicting?
+Flight delays
+- What evaluation metric did you choose and why?
+R squared and Root Mean Squared Error (RMSE)
+- What is your baseline model?
+Dummy Regressor with median strategy
+- What is the score of the baseline model?
+RMSE: 123, R2: -0.09
+
+
+```Bash
+pip install airportsdata
+```
