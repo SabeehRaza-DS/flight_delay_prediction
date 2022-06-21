@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+02-ML-Flight_delay.ipynb
+EDA-and-modeling.ipynb
 
 # C extensions
 *.so
@@ -137,3 +139,6 @@ dmypy.json
 
 # Data 
 data/
+02-ML-Flight_delay.ipynb
+02-ML-Flight_delay.ipynb
+EDA-and-modeling.ipynb
