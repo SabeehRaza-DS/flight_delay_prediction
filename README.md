@@ -1,8 +1,47 @@
-# Template Repo for ML Project
+# Flight Delay Prediction Challenge (group project)
 
-This template repo will give you a good starting point for your second project. Besides the files used for creating a virtual environment, you will find a simple example of how to build a simple model in a python script. This is maybe the simplest way to do it. We train a simple model in the jupyter notebook, where we select only some features and do minimal cleaning. The output is then stored in simple python scripts.
 
-The data used for this is: [coffee quality dataset](https://github.com/jldbc/coffee-quality-database).
+<a><img align="center" src="https://thehill.com/wp-content/uploads/sites/2/2021/07/airlines-flights_istock_biz.jpg?w=1280" height="50%" width="80%" /></a>
+
+<br>
+
+## Description
+Tunisair Airline is interested in reducing their flight delays, therefore they are looking for a solution based on Machine Learning techniques.
+
+Flight delays not only irritate air passengers and disrupt their schedules but also cause :
+
+- a decrease in efficiency
+- an increase in capital costs, reallocation of flight crews and aircraft
+- an additional crew expenses
+- As a result, on an aggregate basis, an airline's record of flight delays may have a negative impact on passenger demand.
+
+<br>
+
+## Dataset
+
+Flight Data: [Tunisair Airline dataset](https://assets.zindi.africa/competitions/ai-tunisia-hack-5-predictive-analytics-challenge-2/data)
+
+Airports Data: [Worldwide airports dataset](https://pypi.org/project/airportsdata/)
+
+<br>
+
+## Evaluation
+The metric used for this challenge is Root Mean Square Error.
+
+<br>
+
+## Stakeholder Aim: 
+Traveling agency like *TUI* wants their passenger to make the bookings with no or few hours delay while traveling with Tunisair Airline, therefore this study by Tunisair Airline will help traveling agency to assist passengers with minimum hassle.
+
+## Approach
+
+- Detailed EDA is performed in order to understand busiest airport flight patterns, flight durations, International/National flight numbers and hourly flight patterns
+
+- Only flight with 1 day delay has been considered
+
+- Naive Baseline model
+
+- Predicted flight delays based on their average delay time (RMSE) using different ML techniques (comparative study for ML models)
 
 ---
 ## Requirements and Environment
@@ -21,40 +60,6 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
-## Usage
-
-In order to train the model and store test data in the data folder and the model in models run:
-
-```bash
-#activate env
-source .venv/bin/activate
-
-python example_files/train.py  
-```
-
-In order to test that predict works on a test set you created run:
-
-```bash
-python example_files/predict.py models/linear_regression_model.sav data/X_test.csv data/y_test.csv
-```
-
-## Limitations
-
-Development libraries are part of the production environment, normally these would be separate as the production code should be as slim as possible.
-
-
-### Milestone 1: Sabeeh, Stephan, Robert
-- What is the value of the product? Stakeholder:
-Tui Travel Agency / Predict flight delays to improve recommendation for customers and therefore generate more revenue
-- What are you predicting?
-Flight delays
-- What evaluation metric did you choose and why?
-R squared and Root Mean Squared Error (RMSE)
-- What is your baseline model?
-Dummy Regressor with median strategy
-- What is the score of the baseline model?
-RMSE: 123, R2: -0.09
 
 
 ```Bash
